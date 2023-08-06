@@ -1,0 +1,78 @@
+.educacion__container {
+    row-gap: 0;
+}
+
+.educacion__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+.educacion__nombre {
+    text-align: center;
+}
+
+.educacion__titulo {
+    font-size: 1.3rem;
+}
+
+.educacion__img {
+    width: 35%;
+}
+
+.educacion__icon-arrow {
+    font-size: 3rem;
+    color: var(--color2-text);
+}
+
+.educacion__img {
+    margin-right: .75rem;
+}
+
+.datos {
+    transform: scaleX(-1);
+}
+
+.educacion__icon-arrow {
+    margin-left: auto;
+    /*transition: 3s;*/
+}
+
+.educacion__titulo {
+    font-size: 1.4rem;
+}
+
+.educacion_intro {
+    display: flex;
+    justify-content: center;
+
+}
+
+.educacion__list {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: .1rem;
+
+    row-gap: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.7rem;
+}
+
+.educacion__close .educacion__list {
+    height: 0;
+    overflow: hidden;
+
+}
+
+.educacion__open .educacion__list {
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+
+.educacion__open .educacion__icon-arrow {
+    transform: rotate(-180deg);
+}

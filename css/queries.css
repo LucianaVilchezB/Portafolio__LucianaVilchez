@@ -1,0 +1,27 @@
+/* Para tablet dispositivos*/
+
+@media screen and (min-width:568px) {
+    .presentacion__content {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .presentacion_info {
+        grid-column: initial;
+    }
+
+    .presentacion__logoLu {
+        order: 1;
+        justify-self: center;
+    }
+
+    .conoceme__container {}
+
+    .conoceme__img-blob {
+        width: ;
+        height:
+    }
+}
+
+
+
+/* Para desktop dispositivos*/

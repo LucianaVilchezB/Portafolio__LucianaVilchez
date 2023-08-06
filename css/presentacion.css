@@ -1,0 +1,303 @@
+/*========= Version Portafolio Final====*/
+.presentacion__container {
+    gap: 1rem;
+}
+
+.presentacion__content {
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.presentacion__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.presentacion__social-icon {
+    font-size: 1.25rem;
+    color: var(--color2-text);
+
+    :hover {
+        color: var(--color3-text-hover);
+    }
+}
+
+.presentacion__logoLu {
+    width: 40%;
+}
+
+.presentacion__blob {
+    width: 200px;
+    height: 38%;
+}
+
+.presentacion__blob-img {
+    width: 80%;
+
+}
+
+.presentacion_info {
+    grid-column: 1/3;
+}
+
+.presentacion__titulo {
+    font-size: var(--font-size-title);
+    font-family: var(--font-title-cap);
+    font-weight: var(--font-weigth-title);
+    letter-spacing: .3967rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.presentacion__introduccion {
+    font-size: var(--font-size-text);
+    font-family: var(--font-text);
+
+    letter-spacing: .1967rem;
+
+    color: var(--color2-text);
+    margin-bottom: .784rem;
+
+}
+
+.presentacion__scroll {
+    /*display: none;*/
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color2-text);
+    color: var(--color1-text);
+    padding: 1rem;
+    border-radius: 53% 51% 49% 47%;
+    font-weight: var(--font-weigth-text);
+
+    letter-spacing: .123rem;
+
+}
+
+.btn:hover {
+    background-color: var(--color2-fondo-graficos);
+    color: var(--color1-text);
+}
+
+.btn__icon-scroll {
+    font-size: 1.55rem;
+    margin-left: var(.5rem);
+    transition: .3s;
+}
+
+.btn--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+/*
+.presentacion__scroll-btn {
+    color: var(--color2-text);
+    transition: .3s;
+
+}
+
+.presentacion__scroll-btn:hover {
+    transform: translateY(.25rem);
+    color: var(--color3-text-hover);
+}
+
+.presentacion__scroll-mouse {
+    font-size: 2rem;
+}
+
+.presentacion__scroll-name {
+    font-size: var(--font-size-normal);
+    color: var(--color2-text);
+    font-weight: var(--font-weigth-text);
+    margin-right: .25rem;
+    letter-spacing: .15em;
+}
+
+.presentacion__scroll-mouse {
+    font-size: 1.25rem;
+}
+
+/*
+
+.presentacion__scroll-name::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--color2-text);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+}
+
+
+.presentacion__scroll-name:hover::after {
+    width: 100%;
+}
+
+/*.animation {
+    color: transparent;
+    -webkit-text-stroke: .03rem var(--color1-text);
+
+} */
+
+/*========= Version 2.1 ====*
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+
+}
+
+.presentacion_container {
+
+    height: ;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+
+}
+
+
+.presentacion__titulo {
+
+    font-family: var(--font-title-cap);
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 3.734rem;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: .5967rem;
+}
+
+.presentacion__introduccion {
+
+    padding-top: 1.2345em;
+    padding-bottom: 1.2345em;
+    padding-right: .5em;
+    font-family: var(--font-text);
+
+    color: var(--color1-text);
+    /*text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+
+}
+
+.animation {
+    color: transparent;
+    -webkit-text-stroke: .03rem var(--color1-text);
+
+}
+
+.presentacion__btn {
+
+    padding: .20em;
+    background: none;
+    font-family: var(--font-text);
+
+    font-size: 1.2rem;
+    border-radius: 22px;
+    border: var(--color1-text);
+    letter-spacing: .15em;
+    display: flex;
+    position: relative;
+}
+
+.presentacion__btn:hover {
+    padding: .25em;
+    color: var(--color1-text);
+    font-size: 1.3rem;
+}
+
+.presentacion__btn::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--1color-hover-enlace);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+}
+
+
+.presentacion__btn:hover::after {
+    width: 100%;
+}
+
+
+
+
+.presentacion__social_network {
+    position: absolute;
+
+    bottom: 4rem;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentacion__social_network .logo__redes {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: aliceblue;
+    border: .2rem solid aliceblue;
+    border-radius: 50%;
+
+
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.logo__lucianafigure {
+    width: 60%;
+    position: ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo_luciana {
+    left: ;
+    width: 40%;
+}
+
+
+/*
+
+.presentacion__social_network .logo__redes :hover {
+    color: aliceblue;
+}
+
+.presentacion__social_network .logo__redes ::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.presentacion__social_network .logo__redes :hover::before {
+    width: 100%;
+}
+
+/*

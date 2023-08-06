@@ -1,0 +1,478 @@
+:root {
+
+    --header-height: 3rem;
+    /*========= Colors ====*/
+    --background-figures: #020001;
+    --1color-hover-enlace: #911a06;
+    --2color-hover-enlace: #893e2c;
+    --3color-hover-enlace: #e43702;
+    --4color-hover-enlace: #447BC4;
+    --5color-hover-enlace: #2663ad;
+
+
+    --color1-text: #F0F5F9;
+    --color2-text: #1E2022;
+    --color3-text-hover: #52616B;
+    --color4-text-hover: #C9D6DF;
+
+    --color1-fondo-graficos: #C9D6DF;
+    --color2-fondo-graficos: #52616B;
+
+    --color-background: #1E2022;
+
+    --container-basic-color1: #F0F5F9;
+    --container-basic-color2: #C9D6DF;
+    --container-background: #52616B;
+    --background: #1E2022;
+
+
+
+
+    /*========= Font and tipografía====*/
+
+    --font-text: 'Playfair', serif;
+    --font-title-cap: 'Playfair Display', serif;
+    --font-title-principal: 'Playfair Display SC', serif;
+
+    --font-size-title: 2rem;
+    --font-size-intro: 1.59rem;
+    --font-size-text: 1.2345rem;
+    --font-size-normal: .923rem;
+    --font-smaller-size: .75rem;
+
+
+    --font-weigth-title: 600;
+    --font-weigth-subt: 550;
+    --font-weigth-text: 500;
+
+    /*========= Btn Margin====*/
+    --margin-btn: 25rem;
+
+    /*========= Z index ====*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/*========= Font and tipografía para desktop====*/
+@media screen and(min-width:968px) {
+    :root {
+        --font-size-title: 3rem;
+        --font-size-text: 2.4345rem;
+        --font-size-normal: 1.234rem;
+        --font-smaller-size: .9875rem;
+    }
+}
+
+/*========= Variables Dark Theme
+
+body.dark-theme{
+    --color1-text: #F0F5F9;
+    --color2-text: #1E2022;
+    --color3-text-hover: #52616B;
+
+    --color2-fondo-graficos: #52616B;
+
+    --color-background: #1E2022;
+
+    --container-basic-color1: #F0F5F9;
+    --container-background: #52616B;
+    --background: #1E2022;
+
+} ====*/
+
+/*========= Btn Theme Dark/Light 
+.head__btns {
+    display: flex;
+    align-items: center;
+}
+
+.change__theme {
+    font-size: 1.25rem;
+    color: var(--color2-text);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.change__theme:hover {
+    color: var(--color3-text-hover);
+}
+====*/
+
+
+/*========= Base ====*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    background-color: var(--container-basic-color2);
+    color: var(--color2-text);
+}
+
+.title {
+    font-size: var(--font-size-title);
+    font-family: var(--font-title-cap);
+    font-weight: var(--font-weigth-title);
+    letter-spacing: .3967rem;
+    margin-bottom: 1rem;
+}
+
+.subt {
+    font-size: var(--font-size-intro);
+    font-family: var(--font-text);
+    font-weight: var(--font-weigth-subt);
+    margin-bottom: .50rem;
+    letter-spacing: .110rem;
+}
+
+
+.numbers {
+    font-size: var(--font-size-intro);
+    font-family: var(--font-text);
+    font-weight: var(--font-weigth-subt);
+    margin-bottom: .50rem;
+    letter-spacing: .110rem;
+}
+
+.intro {
+    font-size: var(--font-size-intro);
+    font-family: var(--font-text);
+    font-weight: var(--font-weigth-text);
+    letter-spacing: .123rem;
+
+    margin-bottom: 2rem;
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*========= Clases CSS Reuzables ====*/
+
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.seccion__text {
+    display: block;
+    font-size: var(--font-size-text);
+    margin-bottom: 3rem;
+}
+
+.title,
+.seccion__text {
+    text-align: center;
+}
+
+/*========= Layout ====*/
+
+.container {
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*========= Scroll Bar ====*/
+
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--container-basic-color1);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--container-basic-color2);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--container-background);
+}
+
+/*========= Media Queries ====*/
+
+/* Para mobile dispositivos*/
+/*
+@media screen and (max-width: 350px) {
+
+
+    .container {
+        margin-left: .25rem;
+        margin-right: .25rem;
+    }
+
+    .title {
+        font-size: var(--font-size-normal);
+    }
+
+    .head__menu {
+        padding: 1.5rem .20rem 1.5rem;
+
+    }
+
+    .head__list {
+        column-gap: 0;
+    }
+
+    .presentacion__content {
+        grid-template-columns: .20fr 3fr;
+    }
+
+    .presentacion__blob {
+        width: 130px;
+    }
+
+    .conoceme__info {
+        font-size: -1rem;
+    }
+
+    .educacion__container {
+        padding: .75rem .20rem .75rem;
+        margin-right: -1rem;
+    }
+
+    .educacion__titulo {
+        font-size: .7rem;
+    }
+
+    .educacion__content {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .educacion__content {
+        font-size: smaller;
+        padding: .75rem .20rem .75rem;
+
+        grid-template-columns: min-content;
+    }
+
+    .educacion__container {
+        flex-wrap: wrap;
+        direction;
+        grid-template-columns: max-content;
+    }
+
+    .experiencia__tabs {
+        gap: .5rem;
+    }
+
+    .educacion__head {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+
+    .experiencia__secciones {
+        gap: .5rem;
+    }
+
+
+    .portafolio__container {
+        grid-template-columns: min-content;
+    }
+
+
+    .experiencias__modal {
+        padding: 0 .5rem;
+        display: inline-block;
+    }
+}
+*/
+
+/* Para tablet dispositivos*/
+
+@media screen and (min-width:568px) {
+    .presentacion__content {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .presentacion_info {
+        grid-column: initial;
+    }
+
+    .presentacion__logoLu {
+        order: 1;
+        justify-self: center;
+    }
+
+    /*.conoceme__container {
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center
+    }*/
+
+    .educacion__container {
+        gap: 0;
+        width: ;
+    }
+
+    .experiencia__content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .experiencia__rounder,
+    .experiencia__line {
+        visibility: hidden;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    body {
+        margin: .25rem;
+    }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+
+    .head {
+        top: 0;
+        bottom: initial;
+    }
+
+    .head,
+    .main,
+    .footer__container {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height)+ 1.5rem);
+        column-gap: 1rem;
+    }
+
+    .head__icon,
+    .head__close,
+    .head__toggle,
+    .head__title {
+        display: none;
+    }
+
+    .head__list {
+        display: flex;
+        column-gap: .5rem;
+    }
+
+    .head__menu,
+    .head__list {
+        margin-left: auto;
+    }
+
+    .presentacion__container {
+        row-gap: 2rem;
+    }
+
+    .presentacion__content {
+        padding-top: 4rem;
+        column-gap: 3.5rem;
+    }
+
+    .presentacion__logoLu {
+        width: 270px;
+    }
+
+    .presentacion__scroll {
+        display: block;
+
+    }
+
+    .conoceme__img-blob {
+        width: 350px;
+    }
+
+
+    .experiencia__rounder,
+    .experiencia__line {
+        visibility: visible;
+    }
+
+    .experiencias__modal {
+        padding: 6rem 0 2rem 2.5rem;
+    }
+
+    .experiencia__modal-content {
+        width: 550px;
+    }
+
+    .portafolio__img {
+        width: 320px;
+    }
+
+    .footer__social-icon {
+        font-size: 1.5rem;
+    }
+
+    .footer__link {
+        font-size: 1.5rem;
+
+    }
+}
+
+/* Para desktop dispositivos*/
+
+@media screen and (min-width: 1024px) {
+
+
+    .header,
+    .main,
+    .footer__container {
+        padding: 0;
+    }
+
+    .presentacion__logoLu {
+        width: 320px;
+    }
+
+    /*.presentacion__social {
+        transform: translateX(-10rem);
+    }*/
+
+    .swiper-portafolio-icon {
+        font-size: 3.5rem;
+    }
+
+    .swiper-button-prev {
+        left: -3.5rem;
+    }
+
+    .swiper-button-next {
+        right: -3.5rem;
+    }
+
+}

@@ -1,0 +1,195 @@
+.experiencia__img {
+    width: 35%;
+    align-items: center;
+}
+
+
+/*.experiencia__content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}*/
+
+.experiencia__tabs {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.experiencia__intro {
+    text-align: center;
+}
+
+
+.experiencia__info {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.experiencia__titulo {
+    font-size: 1.5rem;
+    letter-spacing: .367rem;
+    text-align: center;
+    font-weight: var(--font-weigth-title);
+}
+
+.experiencia__subt {
+    color: var(--color3-text-hover);
+    font-size: 1.30rem;
+    letter-spacing: normal;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+
+.experiencia__icon {
+    font-size: 1.8rem;
+    color: var(--color3-text-hover);
+    margin-right: .25rem;
+}
+
+.experiencia__logo-empresa {
+    color: var(--color3-text-hover);
+    font-size: 1rem;
+}
+
+.experiencia__rounder {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: var(--color-background);
+    border-radius: 50%;
+
+}
+
+.experiencia__line {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-background);
+    transform: translate(6px, -7px);
+}
+
+/*-------   Diseno desplegables experiencias adquiridas ----*/
+
+
+.experiencia__btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.icon__size {
+    font-size: 1.4rem;
+}
+
+.btn--small {
+    padding: .75rem 1rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.btn--link {
+    padding: 0;
+    background-color: transparent;
+    color: var(--color2-text);
+}
+
+.btn--link:hover {
+    background-color: transparent;
+    color: var(--color3-text-hover);
+}
+
+.btn--link:hover .btn__icon {
+    transform: translateX(.25rem);
+}
+
+
+.experiencias__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.experiencia__modal-content {
+    position: relative;
+    background-color: var(--container-basic-color1);
+
+    gap: 1.5rem;
+
+    padding: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .20);
+    transition: .3s;
+}
+
+.experiencia__log-companies-4 {
+    width: 20%;
+    margin-bottom: .5rem;
+}
+
+.experiencia__log-companies-3 {
+
+    width: 35%;
+    margin-bottom: .5rem;
+}
+
+.experiencia__modal-expertise {
+    row-gap: 1rem;
+
+}
+
+.experiencia__modal-experiencias {
+    display: flex;
+}
+
+.experiencia__modal-title {
+    font-size: 1rem;
+}
+
+.experiencia__modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--color2-text);
+    cursor: pointer;
+}
+
+.experiencia__modal-icon {
+    color: var(--color2-text);
+    margin-right: .27rem;
+}
+
+/*-------   Activar el modo desplegables experiencias adquiridas ----*/
+
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.experiencia__log-companies-6 {
+    width: 20%;
+}
+
+.experiencia__log-companies-0 {
+    width: 10%;
+}

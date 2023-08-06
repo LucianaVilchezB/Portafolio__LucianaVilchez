@@ -1,0 +1,140 @@
+.contact__container {
+    row-gap: 1.5rem;
+}
+
+.contact__titulo {
+    margin-bottom: -5rem;
+}
+
+.contact__subtitulo {
+    margin-top: -1rem;
+    text-align: center;
+}
+
+.contacto__contexto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: -3rem;
+}
+
+
+.contacto__tituloo {
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    text-align: center;
+    color: var(--color2-text);
+    font-weight: var(--font-weigth-subt);
+    margin-bottom: 1rem;
+}
+
+
+.contacto__btn-desplegable {
+    color: var(--color3-text-hover);
+    font-weight: var(--font-weigth-title);
+    font-size: var(--font-size-intro);
+    font-family: var(--font-text);
+    letter-spacing: .20rem;
+    font-size: 1.4rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.icon__down:hover .btn__icon {
+    transform: translateY(.25rem);
+}
+
+
+.contacto__deslizable-form {
+    margin-top: -1.5rem;
+}
+
+/*-------  Formato modo desplegable formulario ----*/
+
+.formulario__modal-form {
+    display: flex;
+    align-items: center;
+    background-color: var(--container-background);
+
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .20);
+    transition: .3s;
+
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+
+    transition: .3s;
+}
+
+.formulario__titulo {
+    color: var(--color1-text);
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.contact__content {
+    /*background-color: var(--container-background);*/
+    background-color: var(--container-basic-color1);
+    border-radius: 1.5rem;
+
+    padding: .60rem 1rem .25rem;
+}
+
+.contact__label {
+    color: var(--color2-text);
+    font-weight: var(--font-weigth-title);
+    font-size: 1.2rem;
+    font-family: var(--font-text);
+    letter-spacing: .15rem;
+    margin-top: .3rem;
+}
+
+
+.input {
+    width: 100%;
+    background-color: var(--container-basic-color1);
+    color: var(--color3-text-hover);
+    font-family: var(--font-text);
+    font-size: 1rem;
+    letter-spacing: .110rem;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: .25rem .3rem .3rem 0;
+}
+
+.contact__send-icon {
+    margin-top: -1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.btn_icon-send,
+.btn_icon-modal-close {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color1-text);
+}
+
+.btn_icon-send:hover,
+.btn_icon-modal-close:hover {
+    color: var(--color2-text);
+}
+
+
+.formulario__close .formulario__modal-form {
+    height: 0;
+    overflow: hidden;
+
+}
+
+.formulario__open .formulario__modal-form {
+    height: max-content;
+    margin-bottom: 2rem;
+}

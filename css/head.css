@@ -1,0 +1,120 @@
+/*========= Version Portafolio Final====*/
+
+.head {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--container-basic-color2);
+}
+
+.head__navegacion {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head__toggle {
+    color: var(--color2-text);
+    font-weight: var(--font-weigth-text);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.head__toggle:hover {
+    color: var(--color3-text-hover);
+}
+
+
+@media screen and (max-width:767px) {
+    .head__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        /*--container-basic-color2*/
+        background-color: var(--container-background);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px var(--container-background);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .234s;
+    }
+}
+
+.head__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.head__link {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font-size-normal);
+    /*color: var(--color2-text)*/
+    ;
+    color: var(--color1-text);
+    font-weight: var(--font-weigth-text);
+
+    letter-spacing: .1523rem;
+}
+
+.head__link:hover {
+    /*color: var(--color3-text-hover);*/
+    color: var(--color2-text);
+}
+
+.head__link::after {
+    content: '';
+    width: 0;
+    height: 1.4px;
+    background: var(--color2-text);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.34s;
+}
+
+
+.head__link:hover::after {
+    width: 100%;
+}
+
+
+.head__icon {
+    font-size: 1.2rem;
+}
+
+.head__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color2-text);
+}
+
+.head__close:hover {
+    color: var(--color1-text);
+}
+
+/*========= Mostrar apps====*/
+.show-menu {
+    bottom: 0;
+}
+
+/*========= Active Link ====*/
+
+.active-link {
+    color: var(--color2-text);
+}
+
+/*========= Cambiar background header ====*/
+
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+}
